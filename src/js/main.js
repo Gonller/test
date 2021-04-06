@@ -10,6 +10,7 @@ SwiperCore.use([Navigation, EffectFade]);
 $(document).ready(function () {
   new Swiper('.swiper-container', {
     // Optional parameters
+    slidesPerView: 1,
     effect: 'fade',
     fadeEffect: {
       crossFade: true
