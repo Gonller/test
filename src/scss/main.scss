@@ -1,4 +1,209 @@
-@import 'typography';
-@import '~bootstrap/scss/functions';
-@import 'variables';
-@import '~bootstrap/scss/bootstrap';
+@import "typography";
+@import "~bootstrap/scss/functions";
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+/*
+html,body {
+  position: relative;
+  min-height: 600px;
+  height: 100%;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid {
+  min-height: 70%;
+  
+}
+
+.swiper-container {
+  position: relative;
+  min-height: 70%;  
+}
+.abc {
+  position: relative;
+  top: -100%
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+}
+.slide-1 {
+  background-image: url(/src/img/beach.jpg);
+}
+.slide-2 {
+  background-image: url(/src/img/mountain.jpg);
+}
+.slide-3 {
+  background-image: url(/src/img/shanghai.jpg);
+}
+
+
+.btn-swiper-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.btn-wrapper {
+  z-index: 1;
+  background: white;
+  margin-left: 2px;
+  padding: 0%;
+  width: 3.6rem;
+  height: 3.6rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btn {
+  height: 120px;
+  font-size: .8rem;
+}
+*/
+html,body {
+  min-height: 600px;
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+.container-fluid {
+  min-width: 400px;
+  min-height: 200px;
+  height: 70%;
+  padding-right: 40px;
+  padding-bottom: 50px;
+}
+.row {
+  height: 100%;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 50PX;
+}
+
+[class*="col-"] {
+  height: 100%;
+}
+.col-btn {
+  height: 50px;
+  margin: auto;
+}
+.btn-container {
+  z-index: 1;
+  position: relative;
+  top: -280%;
+}
+
+/* Slides*/
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.slides {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.slide-1 {
+  background-image: url(/src/img/beach.jpg);
+}
+.slide-2 {
+  background-image: url(/src/img/mountain.jpg);
+}
+.slide-3 {
+  background-image: url(/src/img/shanghai.jpg);
+}
+
+/* Prev-Next */
+:root {
+  --swiper-theme-color: grey !important;
+  --swiper-navigation-size: 20px !important;
+}
+.btn-swiper-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.btn-wrapper {
+  z-index: 1;
+  background: white;
+  margin-left: 2px;
+  padding: 0%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-btn {
+  height: 50px;
+  margin-bottom: 20px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Buttons */
+.nav-container {
+  height: auto;
+}
+div.row.btn-cont {
+  padding: 0 8px ;
+}
+[class*="col-"].btn-item {
+  height: 120px;
+  padding: 0px 8px;
+  background-color: white;
+}
+.btn {
+  width: 100%;
+  height: 104px;
+  border-radius: 0px;
+  font-size: .8rem;
+  line-height: .8rem;
+  text-align: left;
+  background-color: rgb(13, 55, 133);
+  color: white !important;
+  margin-top: 16px;
+  padding: 6px;
+}
+.btn:hover {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: red;
+}
